@@ -1,0 +1,210 @@
+/*background-color: $Purple-500*/
+p {
+  font-size: 18px;
+}
+
+img {
+  width: 200px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(254, 88%, 90%, 0.4);
+  padding: 30px 20px 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8 {
+  border-radius: 8px;
+}
+
+@font-face {
+  font-family: "DMSans-Medium";
+  src: url(/assets/fonts/DMSans-Medium.ttf);
+}
+@font-face {
+  font-family: "DMSans-Regular";
+  src: url(/assets/fonts/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: "DMSans-Thin";
+  src: url(/assets/fonts/DMSans-MediumItalic.ttf);
+}
+main {
+  font-family: "DMSans-Regular";
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  max-width: 600px;
+}
+main .section1 {
+  background-color: hsl(256, 67%, 59%);
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  padding: 30px 20px;
+}
+main .section1 h1 {
+  margin: 0 auto;
+  line-height: 1;
+  font-size: 38px;
+  font-weight: 500;
+  width: 230px;
+  margin-bottom: 15px;
+}
+main .section1 h1 span {
+  color: hsl(39, 100%, 71%);
+}
+main .section1 h1 .Faster {
+  color: hsl(0, 0%, 100%);
+  font-style: italic;
+}
+main .section1 p {
+  opacity: 0.8;
+  color: hsl(31, 66%, 93%);
+}
+main .section2 {
+  background-color: hsl(0, 0%, 100%);
+  padding: 15px;
+  color: hsl(0, 0%, 7%);
+}
+main .section2 img {
+  width: 300px;
+  margin-bottom: 10px;
+}
+main .section2 h2 {
+  font-size: 22px;
+  line-height: 1;
+}
+main .section3 {
+  background-color: hsl(39, 100%, 71%);
+  padding: 15px 15px 0;
+  line-height: 1;
+  overflow: hidden;
+}
+main .section3 img {
+  position: relative;
+  z-index: 1;
+  bottom: -22px;
+}
+main .section4 {
+  color: hsl(0, 0%, 7%);
+  background-color: hsl(254, 88%, 90%);
+  padding: 30px 15px;
+  text-align: center;
+}
+main .section4 h2 {
+  margin-bottom: 20px;
+}
+main .section4 img {
+  width: 280px;
+  margin-bottom: 20px;
+}
+main .section4 p {
+  line-height: 1;
+  font-weight: 500;
+}
+main .section5 {
+  background-color: hsl(256, 67%, 59%);
+  padding: 20px 30px;
+  text-align: center;
+}
+main .section5 img {
+  margin-bottom: 30px;
+}
+main .section5 h2 {
+  color: hsl(0, 0%, 100%);
+  line-height: 1;
+  font-weight: 500;
+  font-size: 30px;
+}
+main .section6 {
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+}
+main .section6 h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+main .section6 p {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+main .section6 img {
+  width: 180px;
+}
+main .section7 {
+  background-color: hsl(31, 66%, 93%);
+  padding: 30px;
+}
+main .section7 h2 {
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+main .section7 h2 span {
+  color: hsl(256, 67%, 59%);
+  font-style: italic;
+}
+main .section8 {
+  background-color: hsl(39, 100%, 71%);
+  padding: 20px;
+}
+main .section8 h2 {
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+main .section8 img {
+  width: 210px;
+}
+
+@media (min-width: 600.02px) and (max-width: 1000px) {
+  main {
+    width: 500px;
+  }
+}
+@media (min-width: 1000.1px) {
+  /*  body {
+    height: 100vh;
+    width: 100%;
+  } */
+  main {
+    display: grid;
+    grid-template-columns: 4, 400px;
+    grid-template-rows: repeat(3, 400px);
+    grid-template-areas: "c7 c1 c1 c4" ".... c2 c3 c4" "c8 c6 c5 c5";
+    gap: 20px;
+  }
+  main .section1 {
+    grid-area: c1;
+  }
+  main .section2 {
+    grid-area: c2;
+  }
+  main .section3 {
+    grid-area: c3;
+  }
+  main .section4 {
+    grid-area: c4;
+  }
+  main .section5 {
+    grid-area: c5;
+  }
+  main .section6 {
+    grid-area: c6;
+  }
+  main .section7 {
+    grid-area: c7;
+  }
+  main .section8 {
+    grid-area: c8;
+  }
+}/*# sourceMappingURL=style.css.map */

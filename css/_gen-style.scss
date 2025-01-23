@@ -1,0 +1,50 @@
+$Purple-100: hsl(254, 88%, 90%);
+$Purple-500: hsl(256, 67%, 59%);
+$Yellow-100: hsl(31, 66%, 93%);
+$Yellow-500: hsl(39, 100%, 71%);
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0%, 7%);
+$text: center;
+$radius: 8px;
+/*background-color: $Purple-500*/
+p {
+  font-size: 18px;
+}
+img {
+  width: 200px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(254, 88%, 90%, 0.4);
+  padding: 30px 20px 20px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8 {
+  border-radius: 8px;
+}
+@font-face {
+  font-family: 'DMSans-Medium';
+  src: url(/assets/fonts/DMSans-Medium.ttf);
+}
+//font-family: 'DMSans-Medium';
+@font-face {
+  font-family: 'DMSans-Regular';
+  src: url(/assets/fonts/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'DMSans-Thin';
+  src: url(/assets/fonts/DMSans-MediumItalic.ttf);
+}
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
