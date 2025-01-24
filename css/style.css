@@ -1,0 +1,214 @@
+/*background-color: $Purple-500*/
+p {
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(254, 88%, 90%, 0.4);
+  padding: 30px 20px 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8 {
+  border-radius: 8px;
+}
+
+@font-face {
+  font-family: "DMSans-Medium";
+  src: url(fonts/DMSans-Medium.ttf);
+}
+@font-face {
+  font-family: "DMSans-Regular";
+  src: url(fonts/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: "DMSans-Thin";
+  src: url(fonts/DMSans-MediumItalic.ttf);
+}
+main {
+  font-family: "DMSans-Regular";
+  display: grid;
+  gap: 25px;
+  max-width: 350px;
+}
+main .section1 {
+  background-color: hsl(256, 67%, 59%);
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  padding: 30px 20px;
+}
+main .section1 h1 {
+  margin: 0 auto;
+  line-height: 1;
+  font-size: 38px;
+  font-weight: 500;
+  width: 230px;
+  margin-bottom: 15px;
+}
+main .section1 h1 span {
+  color: hsl(39, 100%, 71%);
+}
+main .section1 h1 .Faster {
+  color: hsl(0, 0%, 100%);
+  font-style: italic;
+}
+main .section1 img {
+  max-width: 65%;
+}
+main .section1 p {
+  opacity: 0.8;
+  color: hsl(31, 66%, 93%);
+}
+main .section2 {
+  background-color: hsl(0, 0%, 100%);
+  padding: 15px;
+  color: hsl(0, 0%, 7%);
+}
+main .section2 img {
+  margin-bottom: 10px;
+}
+main .section2 h2 {
+  font-size: 22px;
+  line-height: 1;
+}
+main .section3 {
+  background-color: hsl(39, 100%, 71%);
+  padding: 15px 15px 0;
+  line-height: 1;
+  overflow: hidden;
+}
+main .section3 img {
+  width: 70%;
+  position: relative;
+  z-index: 1;
+  bottom: -22px;
+}
+main .section4 {
+  color: hsl(0, 0%, 7%);
+  background-color: hsl(254, 88%, 90%);
+  padding: 30px 15px;
+  text-align: center;
+}
+main .section4 h2 {
+  margin-bottom: 20px;
+}
+main .section4 img {
+  margin-bottom: 20px;
+}
+main .section4 p {
+  line-height: 1;
+  font-weight: 500;
+}
+main .section5 {
+  background-color: hsl(256, 67%, 59%);
+  padding: 20px 30px;
+  text-align: center;
+}
+main .section5 img {
+  width: 80%;
+  margin-bottom: 30px;
+}
+main .section5 h2 {
+  color: hsl(0, 0%, 100%);
+  line-height: 1;
+  font-weight: 500;
+  font-size: 30px;
+}
+main .section6 {
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+}
+main .section6 h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+main .section6 p {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+main .section6 img {
+  width: 60%;
+}
+main .section7 {
+  background-color: hsl(31, 66%, 93%);
+  padding: 30px;
+}
+main .section7 h2 {
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+main .section7 h2 span {
+  color: hsl(256, 67%, 59%);
+  font-style: italic;
+}
+main .section7 img {
+  width: 70%;
+}
+main .section8 {
+  background-color: hsl(39, 100%, 71%);
+  padding: 20px;
+}
+main .section8 h2 {
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+main .section8 img {
+  width: 80%;
+}
+
+@media (min-width: 1000.1px) {
+  body {
+    display: grid;
+    height: 100vh;
+  }
+  body main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "grid7 grid1 grid1 grid4" ".......... grid2 grid3 grid4" "grid8 grid6 grid5 grid5";
+    gap: 20px;
+    max-width: 900px;
+  }
+  body main .section1 {
+    grid-area: grid1;
+  }
+  body main .section2 {
+    grid-area: grid2;
+  }
+  body main .section3 {
+    grid-area: grid3;
+  }
+  body main .section4 {
+    grid-area: grid4;
+  }
+  body main .section5 {
+    grid-area: grid5;
+  }
+  body main .section6 {
+    grid-area: grid6;
+  }
+  body main .section7 {
+    grid-area: grid7;
+    grid-row-end: span 2;
+    z-index: 0;
+  }
+  body main .section8 {
+    grid-area: grid8;
+    grid-row-start: span 2;
+  }
+}/*# sourceMappingURL=style.css.map */

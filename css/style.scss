@@ -1,0 +1,192 @@
+@import 'gen-style';
+main {
+  font-family: 'DMSans-Regular';
+  display: grid;
+  gap: 25px;
+  max-width: 350px;
+
+  .section1 {
+    background-color: $Purple-500;
+    text-align: $text;
+    color: $White;
+    padding: 30px 20px;
+    h1 {
+      margin: 0 auto;
+      line-height: 1;
+      font-size: 38px;
+      font-weight: 500;
+      width: 230px;
+      margin-bottom: 15px;
+      span {
+        color: $Yellow-500;  
+      }
+      .Faster {
+        color: $White;
+        font-style: italic;
+      }
+    }
+    img {
+      max-width: 65%;
+    }
+    p {
+      opacity: 0.8;
+      color: $Yellow-100;
+    }
+  }
+
+  .section2 {
+    background-color: $White;
+    padding: 15px;
+    color: $Black;
+    img {
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 22px;
+      line-height: 1;
+    }
+  }
+
+  .section3 {
+    background-color: $Yellow-500;
+    padding: 15px 15px 0;
+    line-height: 1;
+    overflow: hidden;
+    img {
+      width: 70%;
+      position: relative;
+      z-index: 1;
+      bottom: -22px;
+    }
+  }
+
+  .section4 {
+    color: $Black;
+    background-color: $Purple-100;
+    padding: 30px 15px;
+    text-align: center;
+    h2 {
+      margin-bottom: 20px;
+    }
+    img {
+      margin-bottom: 20px;
+    }
+    p {
+      line-height: 1;
+      font-weight: 500;
+    }
+  }
+
+  .section5 {
+    background-color: $Purple-500;
+    padding: 20px 30px;
+    text-align: center;
+    img {
+      width: 80%;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: $White;
+      line-height: 1;
+      font-weight: 500;
+      font-size: 30px;
+    }
+  }
+
+  .section6 {
+    background-color: $White;
+    padding: 20px;
+
+    h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    img {
+      width: 60%;
+    }
+  }
+
+  .section7 {
+    background-color: $Yellow-100;
+    padding: 30px;
+
+    h2 {
+      font-size: 28px;
+      line-height: 1;
+      margin-bottom: 20px;
+      span {
+        color: $Purple-500;
+        font-style: italic;
+      }
+    }
+    img {
+      width: 70%;
+    }
+  }
+
+  .section8 {
+    background-color: $Yellow-500;
+    padding: 20px;
+
+    h2 {
+      font-size: 30px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 80%
+    }
+  }
+
+}
+
+@media (min-width: 1000.1px) {
+  body {
+    display: grid;
+    height: 100vh;
+
+    main {   
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 0.5fr 0.5fr 0.5fr;
+      grid-template-areas: 
+      "grid7 grid1 grid1 grid4"
+      ".......... grid2 grid3 grid4"
+      "grid8 grid6 grid5 grid5";
+      gap: 20px;
+      max-width: 900px;
+  
+      .section1 {
+        grid-area: grid1;
+      }
+      .section2 {
+        grid-area: grid2;
+      }
+      .section3 {
+        grid-area: grid3;
+      }
+      .section4 {
+        grid-area: grid4;
+      }
+      .section5 {
+        grid-area: grid5;
+      }
+      .section6 {
+        grid-area: grid6;
+      }
+      .section7 {
+        grid-area: grid7;
+        grid-row-end: span 2;
+        z-index: 0;
+      }
+      .section8 {
+        grid-area: grid8;
+        grid-row-start: span 2;
+      }
+    }
+  }
+}
