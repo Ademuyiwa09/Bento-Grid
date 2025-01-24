@@ -30,17 +30,8 @@ body {
   border-radius: 8px;
 }
 @font-face {
-  font-family: 'DMSans-Medium';
-  src: url(fonts/DMSans-Medium.ttf);
-}
-//font-family: 'DMSans-Medium';
-@font-face {
   font-family: 'DMSans-Regular';
-  src: url(fonts/DMSans-Regular.ttf);
-}
-@font-face {
-  font-family: 'DMSans-Thin';
-  src: url(fonts/DMSans-MediumItalic.ttf);
+  src: url(/fonts/DMSans-Regular.ttf);
 }
 @mixin flexCenter {
   display: flex;
